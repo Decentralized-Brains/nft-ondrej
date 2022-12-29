@@ -4,7 +4,7 @@ import Card from "../assets/card.gif";
 const PreviousCollection = () => {
   return (
     <div className="max-w-6xl mx-auto">
-      <h2 className="text-2xl text-white font-bold py-10">
+      <h2 className="text-2xl text-white font-bold py-10 mx-2 md:mx-0">
         Previous Collection
       </h2>
       <div className="grid justify-items-center grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 ">
