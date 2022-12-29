@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../assets/card.gif";
+import { DumyCard } from "./Data";
 
 const Info = () => {
   return (
@@ -12,14 +12,22 @@ const Info = () => {
       <div className="grid grid-cols-1 lg:grid-cols-4 justify-items-center ">
         {/* This is card */}
         <div className="hidden lg:grid grid-cols-1 gap-2 ">
-          <div className="w-64 h-96 bg-[#DEAF07] p-2 rounded">
-            <img src={Card} alt="" className=" h-60 w-full mx-auto rounded" />
-            <h2 className="text-xl pt-4">Lorem Ipsum</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-              consectetur.
-            </p>
-          </div>
+          {DumyCard.map((record) => {
+            return (
+              <div
+                className="w-64 h-96 bg-[#DEAF07] p-2 rounded"
+                key={record.id}
+              >
+                <img
+                  src={record.img}
+                  alt=""
+                  className=" h-60 w-full mx-auto rounded"
+                />
+                <h2 className="text-xl font-bold py-3">{record.title}</h2>
+                <p className="leading-5">{record.details}</p>
+              </div>
+            );
+          })}
         </div>
 
         {/* This is table */}
@@ -65,14 +73,22 @@ const Info = () => {
 
         {/* This is card */}
         <div className="hidden lg:grid grid-cols-1 gap-2">
-          <div className="w-64 h-96 bg-[#DEAF07] p-2 rounded">
-            <img src={Card} alt="" className=" h-60 w-full mx-auto rounded" />
-            <h2 className="text-xl pt-4">Lorem Ipsum</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-              consectetur.
-            </p>
-          </div>
+          {DumyCard.map((record) => {
+            return (
+              <div
+                className="w-64 h-96 bg-[#DEAF07] p-2 rounded"
+                key={record.id}
+              >
+                <img
+                  src={record.img}
+                  alt=""
+                  className=" h-60 w-full mx-auto rounded"
+                />
+                <h2 className="text-xl font-bold py-3">{record.title}</h2>
+                <p className="leading-5">{record.details}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
