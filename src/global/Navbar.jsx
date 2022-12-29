@@ -56,9 +56,15 @@ const Navbar = () => {
             </div>
 
             <nav className="max-w-[800px] px-10 flex gap-10 flex-wrap text-black font-medium">
-              <NavLink to="/#">Home</NavLink>
-              <NavLink to="/info">Info</NavLink>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/#" onClick={handleNav}>
+                Home
+              </NavLink>
+              <NavLink to="/info" onClick={handleNav}>
+                Info
+              </NavLink>
+              <NavLink to="/about" onClick={handleNav}>
+                About
+              </NavLink>
               <ul>Previous Collections</ul>
               <ul>Collector Fund</ul>
               <ul>Connect Wallet</ul>
