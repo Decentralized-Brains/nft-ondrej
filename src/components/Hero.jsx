@@ -7,7 +7,7 @@ const Hero = () => {
       <img
         src={HeroImg}
         alt=""
-        className="object-fit h-80 md:h-[26rem] w-full md:max-w-6xl mx-auto border border-[#FCC607] p-2"
+        className="object-fit h-80 md:h-[32rem] w-[60rem] md:max-w-6xl mx-auto border border-[#FCC607] p-2"
       />
 
       <div className="max-w-6xl mx-auto pt-10 ">

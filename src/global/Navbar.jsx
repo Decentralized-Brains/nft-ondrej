@@ -26,15 +26,15 @@ const Navbar = () => {
       </div>
 
       {/* This is navbar */}
-      <div className=" flex justify-between items-center h-14 max-w-6xl mx-auto text-white px-1 sm:px-4">
+      <div className=" flex justify-between items-center h-14 max-w-6xl mx-auto text-white px-2">
         <div onClick={handleNav}>
           <AiOutlineMenu size={20} className="text-white" />
         </div>
         <div
           className={
             nav
-              ? "bg-yellow-400 fixed left-0 top-0 w-full h-[450px] sm:h-[300px] border-r ease-in-out duration-500 text-base"
-              : "hidden"
+              ? "bg-yellow-400 fixed left-0 top-0 w-full h-[450px] md:h-[300px] ease-in-out duration-500 text-base"
+              : "ease-in-out duration-500 fixed top-[-100%]"
           }
         >
           <div className="max-w-6xl mx-auto">
@@ -55,7 +55,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            <nav className="max-w-[800px] px-10 flex gap-10 flex-wrap text-black font-medium">
+            <nav className="px-10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 text-black font-medium gap-4 ">
               <NavLink to="/#" onClick={handleNav}>
                 Home
               </NavLink>

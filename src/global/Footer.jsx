@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-black h-96">
-      <div className="flex flex-col justify-center items-center h-full text-white gap-y-5 px-2 md:px-0">
+    <div className="bg-black h-96 w-full">
+      <div className="flex flex-col justify-center items-center h-full text-white gap-y-5 px-2 md:px-0 text-center">
         <h1 className="text-2xl md:text-4xl font-bold">
           ABC Company. We’re here
         </h1>
