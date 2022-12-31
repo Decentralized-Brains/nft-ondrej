@@ -8,19 +8,19 @@ const About = () => {
     <div className="text-white py-[30px] md:pt-[120px] px-[10px] md:px-[100px]">
       {/* image div */}
       <div>
-        <div >
+        <div>
           <img
           src={heroImage}
           alt=""
-          className="object-fit h-80 md:h-[26rem] w-full md:max-w-6xl mx-auto border border-[#FCC607] p-2"
+          className="object-fit h-80 md:h-[32rem] w-[60rem] md:max-w-6xl mx-auto border border-[#FCC607] p-2"
         />
         </div>
         {/* download & des div */}
-        <div className="flex flex-col md:flex-row gap-[60px] items-center pt-[80px] " >
-          <div className="md:basis-[800px]">
+        <div className="flex flex-col md:flex-row gap-[60px] items-center justify-center pt-[80px] " >
+          <div className="md:basis-[600px]">
             <div className="pb-[25px]">
               <p className="text-[20px] pb-[20px]">Download White Paper and Roadmap as .PDF</p>
-              <div className="flex gap-[36px] items-center" >
+              <div className="flex gap-2 items-center" >
                 <div>
                   <button className="bg-[#DEAF07] hover:bg-white" >White Paper</button>
                 </div>
@@ -35,23 +35,23 @@ const About = () => {
               <p className="text-[#FFFEFE] text-[14px]" >Lorem ipsum dolor sit amet consectetur. Massa nunc ornare luctus tellus. Lacus egestas neque auctor at arcu lacus. Facilisis enim nullam posuere quis vel turpis. Elit vel arcu aliquam et ipsum aliquam nibh.Lorem ipsum dolor sit amet consectetur. Massa nunc ornare luctus tellus. Lacus egestas neque auctor at arcu lacus. Facilisis enim nullam posuere quis vel turpis. Elit vel arcu aliquam et ipsum aliquam nibh.Lorem ipsum dolor sit amet consectetur. Massa nunc ornare luctus tellus. Lacus egestas neque auctor at arcu lacus. Facilisis enim nullam posuere quis vel turpis. Elit vel arcu aliquam et ipsum aliquam nibh.</p>
             </div>
             {/* counter */}
-            <div className="flex gap-[70px] py-[50px]">
+            <div className="flex items-center gap-8 py-[50px]">
               <div>
                 <p className="text-[20px]">Pre Sale Counter </p>
               </div>
               <div className="flex gap-3" >
                 <div className="px-3 py-2 w-[47px] h-[45px] text-[20px] bg-[#FCC607] rounded" >01 </div>
-                <span className="pt-3 text-white">:</span>
+                <span className="pt-2 text-white">:</span>
                 <div className="px-3 py-2 w-[47px] h-[45px] text-[20px] bg-[#FCC607] rounded" >01 </div>
-                <span className="pt-3 text-white">:</span>
+                <span className="pt-2 text-white">:</span>
                 <div className="px-3 py-2 w-[47px] h-[45px] text-[20px] bg-[#FCC607] rounded" >01 </div>
               </div>
             </div>
 
           </div>
-          <div className="w-full md:w-[400px] p-[30px] md:p-[20px] border border-[#FCC607] rounded" >
+          <div className="w-full md:w-[300px] p-[30px] md:p-[20px] border border-[#FCC607] rounded" >
             <h1 className="text-[#FCC607] text-[32px] text-center" >Lorem Ipsum</h1>
-            <div className="py-[25px] px-[10px]">
+            <div className="py-[25px]">
               <div className="flex items-center  justify-between pb-[60px]">
                 <div className="flex items-center gap-[15px]">
                   <div>
@@ -86,16 +86,15 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex gap-x-4 text-white text-[20px] py-5 md:py-[20px] px-2">
+        <div className="flex gap-x-4 pl-[95px] text-white text-[20px] py-5 md:py-[20px] px-2">
                 <FaDiscord />
                 <FaTwitter />
                 <FaInstagram />
                 <FaTelegram />
                 <HiMailOpen />
                 <FaReddit />
-              </div>
-      
+        </div>
+      </div>
     </div> 
 
   );
