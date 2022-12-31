@@ -21,12 +21,12 @@ const Navbar = () => {
   return (
     <div className="text-white">
       {/* This is logo */}
-      <div className="flex justify-center pr-0 md:pr-44 py-10">
+      <div className="flex justify-center py-10">
         <img src={Logo} alt="" className="w-[350px]" />
       </div>
 
       {/* This is navbar */}
-      <div className=" flex justify-between items-center h-14 max-w-6xl mx-auto text-white px-2 border-b border-t border-gray-400">
+      <div className=" flex justify-between items-center h-14 max-w-6xl mx-auto text-white px-2 border-b border-t border-gray-500">
         <div onClick={handleNav}>
           <AiOutlineMenu size={20} className="text-white" />
         </div>
@@ -75,7 +75,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex gap-x-2">
+        <div className="flex gap-x-2 pl-0 md:pl-44">
           <button>Connect Wallet</button>
           <button>Collector Fund</button>
           <button className="bg-[#DEAF07] hover:bg-white">Sign up</button>
