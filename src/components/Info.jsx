@@ -15,7 +15,7 @@ const Info = () => {
           {DumyCard.map((record) => {
             return (
               <div
-                className="w-64 h-96 bg-[#DEAF07] p-2 rounded"
+                className="w-[15rem] h-96 bg-[#DEAF07] p-2 rounded"
                 key={record.id}
               >
                 <img
@@ -31,41 +31,65 @@ const Info = () => {
         </div>
 
         {/* This is table */}
-        <div className="col-span-2 min-w-full ">
-          <table className="min-w-full rounded ">
-            <thead className="bg-[#DEAF07] text-white ">
+        <div className="col-span-2 min-w-full border rounded border-[#DEAF07]">
+          <table class="min-w-full divide-y divide-[#DEAF07] ">
+            <thead>
               <tr>
-                <th className="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">
+                <th
+                  scope="col"
+                  class="px-6 py-3 text-left font-medium text-gray-500 uppercase"
+                >
                   Name
                 </th>
-                <th className="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">
-                  Last name
+                <th
+                  scope="col"
+                  class="px-6 py-3 text-left font-medium text-gray-500 uppercase"
+                >
+                  Age
                 </th>
-                <th className="text-left py-3 px-4 uppercase font-semibold text-sm">
-                  Phone
+                <th
+                  scope="col"
+                  class="px-6 py-3 text-left font-medium text-gray-500 uppercase"
+                >
+                  Address
                 </th>
               </tr>
             </thead>
-            <tbody className="text-white ">
-              <tr className="boder border-b border-[#DEAF07]">
-                <td className="w-1/3 text-left py-3 px-4">Lian</td>
-                <td className="w-1/3 text-left py-3 px-4">Smith</td>
-                <td className="text-left py-3 px-4">Lorem ipsum</td>
+            <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
+                  John Brown
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                  45
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                  New York No. 1 Lake Park
+                </td>
               </tr>
-              <tr className="boder border-b border-[#DEAF07]">
-                <td className="w-1/3 text-left py-3 px-4">Emma</td>
-                <td className="w-1/3 text-left py-3 px-4">Johnson</td>
-                <td className="text-left py-3 px-4">Lorem ipsum</td>
+
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
+                  Jim Green
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                  27
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                  London No. 1 Lake Park
+                </td>
               </tr>
-              <tr className="boder border-b border-[#DEAF07]">
-                <td className="w-1/3 text-left py-3 px-4">Oliver</td>
-                <td className="w-1/3 text-left py-3 px-4">Williams</td>
-                <td className="text-left py-3 px-4">Lorem ipsum</td>
-              </tr>
-              <tr className="boder border-b border-[#DEAF07]">
-                <td className="w-1/3 text-left py-3 px-4">Isabella</td>
-                <td className="w-1/3 text-left py-3 px-4">Brown</td>
-                <td className="text-left py-3 px-4">Lorem ipsum</td>
+
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
+                  Joe Black
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                  31
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                  Sidney No. 1 Lake Park
+                </td>
               </tr>
             </tbody>
           </table>
@@ -76,7 +100,7 @@ const Info = () => {
           {DumyCard.map((record) => {
             return (
               <div
-                className="w-64 h-96 bg-[#DEAF07] p-2 rounded"
+                className="w-[15rem] h-96 bg-[#DEAF07] p-2 rounded"
                 key={record.id}
               >
                 <img

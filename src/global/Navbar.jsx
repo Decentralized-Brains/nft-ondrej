@@ -21,12 +21,12 @@ const Navbar = () => {
   return (
     <div className="text-white">
       {/* This is logo */}
-      <div className="flex justify-center p-10">
+      <div className="flex justify-center pr-0 md:pr-44 py-10">
         <img src={Logo} alt="" className="w-[350px]" />
       </div>
 
       {/* This is navbar */}
-      <div className=" flex justify-between items-center h-14 max-w-6xl mx-auto text-white px-2">
+      <div className=" flex justify-between items-center h-14 max-w-6xl mx-auto text-white px-2 border-b border-t border-gray-400">
         <div onClick={handleNav}>
           <AiOutlineMenu size={20} className="text-white" />
         </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
           className={
             nav
               ? "bg-yellow-400 fixed left-0 top-0 w-full h-[450px] md:h-[300px] ease-in-out duration-500 text-base"
-              : "ease-in-out duration-500 fixed top-[-100%]"
+              : "ease-in-out duration-500 fixed top-[-100%] h-screen w-screen left-0 "
           }
         >
           <div className="max-w-6xl mx-auto">
