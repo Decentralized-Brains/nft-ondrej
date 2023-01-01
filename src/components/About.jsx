@@ -1,11 +1,11 @@
 import React from "react";
 import { FaDiscord, FaInstagram, FaReddit, FaTelegram, FaTwitter } from "react-icons/fa";
 import { HiMailOpen } from "react-icons/hi";
-import heroImage from '../assets/hero.gif'
+import heroImage from '../assets/hero.gif';
 
 const About = () => {
   return (
-    <div className="text-white py-[30px] md:pt-[120px] px-[10px] md:px-[100px]">
+    <div className="text-white py-[30px] px-[10px] md:px-[100px] ">
       {/* image div */}
       <div>
         <div>
@@ -16,8 +16,8 @@ const About = () => {
         />
         </div>
         {/* download & des div */}
-        <div className="flex flex-col md:flex-row gap-[60px] items-center justify-center pt-[80px] " >
-          <div className="md:basis-[600px]">
+        <div className="flex flex-col md:flex-row gap-[60px] items-center justify-center pt-[30px] " >
+          <div className="md:basis-[790px]">
             <div className="pb-[25px]">
               <p className="text-[20px] pb-[20px]">Download White Paper and Roadmap as .PDF</p>
               <div className="flex gap-2 items-center" >
@@ -31,11 +31,11 @@ const About = () => {
             </div>
             {/* description */}
             <div>
-              <p className="text-[20px] py-[23px] text-[#FFFFFF] " >Description</p>
+              <p className="text-[20px] py-[10px] text-[#FFFFFF] " >Description</p>
               <p className="text-[#FFFEFE] text-[14px]" >Lorem ipsum dolor sit amet consectetur. Massa nunc ornare luctus tellus. Lacus egestas neque auctor at arcu lacus. Facilisis enim nullam posuere quis vel turpis. Elit vel arcu aliquam et ipsum aliquam nibh.Lorem ipsum dolor sit amet consectetur. Massa nunc ornare luctus tellus. Lacus egestas neque auctor at arcu lacus. Facilisis enim nullam posuere quis vel turpis. Elit vel arcu aliquam et ipsum aliquam nibh.Lorem ipsum dolor sit amet consectetur. Massa nunc ornare luctus tellus. Lacus egestas neque auctor at arcu lacus. Facilisis enim nullam posuere quis vel turpis. Elit vel arcu aliquam et ipsum aliquam nibh.</p>
             </div>
             {/* counter */}
-            <div className="flex items-center gap-8 py-[50px]">
+            <div className="flex items-center gap-8 py-[30px]">
               <div>
                 <p className="text-[20px]">Pre Sale Counter </p>
               </div>
@@ -86,7 +86,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-x-4 pl-[95px] text-white text-[20px] py-5 md:py-[20px] px-2">
+        <div className="flex items-center justify-start gap-x-4  text-white text-[20px] py-5 md:py-[20px] max-w-6xl mx-auto">
                 <FaDiscord />
                 <FaTwitter />
                 <FaInstagram />
