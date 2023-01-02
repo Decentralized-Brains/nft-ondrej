@@ -55,7 +55,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            <nav className="px-10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 text-black font-medium gap-4 ">
+            <nav className="px-10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 text-black font-medium gap-4 cursor-pointer">
               <NavLink to="/#" onClick={handleNav}>
                 Home
               </NavLink>
