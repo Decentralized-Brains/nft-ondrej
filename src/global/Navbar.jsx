@@ -33,7 +33,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "bg-yellow-400 fixed left-0 top-0 w-full h-[450px] md:h-[300px] ease-in-out duration-500 text-base"
+              ? "bg-yellow-400 fixed left-0 top-0 w-full h-[300px] md:h-[250px] ease-in-out duration-500 text-base"
               : "ease-in-out duration-500 fixed top-[-100%] h-screen w-screen left-0 "
           }
         >
@@ -55,12 +55,9 @@ const Navbar = () => {
               </div>
             </div>
 
-            <nav className="px-10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 text-black font-medium gap-4 cursor-pointer">
+            <nav className="px-10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 text-black font-bold gap-4 cursor-pointer">
               <NavLink to="/#" onClick={handleNav}>
                 Home
-              </NavLink>
-              <NavLink to="/info" onClick={handleNav}>
-                Info
               </NavLink>
               <NavLink to="/about" onClick={handleNav}>
                 About
