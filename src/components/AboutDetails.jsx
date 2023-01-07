@@ -28,7 +28,7 @@ const AboutDetails = () => {
   }, [id]);
 
   return (
-    <div className="text-white px-[10px] md:px-[100px] ">
+    <div className="text-white">
       {/* image div */}
       <div className="container">
         <div className="pt-[114px] pb-[80px]">
@@ -39,7 +39,7 @@ const AboutDetails = () => {
       />
         </div>
         {/* download & des div */}
-        <div className="flex flex-col md:flex-row gap-[104px] items-center justify-center" >
+        <div className="flex flex-col md:flex-row gap-[104px] items-center justify-between" >
           <div className="md:basis-[690px]">
             <div className="pb-[25px]">
               <p className="text-[20px] pb-[22px] text-[#D9D9D9]">Download White Paper and Roadmap as .PDF</p>
