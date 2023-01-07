@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Source Sans Pro", "sans-serif"],
+        wanted: ["WANTED", "sans-serif"],
+        rubik: ["Rubik", "sans-serif"],
       },
     },
   },

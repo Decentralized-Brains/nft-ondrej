@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Logo from "../assets/logo.png";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+
+import { AiOutlineClose } from "react-icons/ai";
 import {
   FaDiscord,
   FaTwitter,
@@ -19,16 +19,22 @@ const Navbar = () => {
   };
 
   return (
-    <div className="text-white">
+    <div className="text-white font-sans px-2">
       {/* This is logo */}
-      <div className="flex justify-center py-10">
-        <img src={Logo} alt="" className="w-[350px]" />
-      </div>
+      {/* <div className="flex justify-center">
+        <img src={Logo} alt="" className="w-[528px] h-[67px]" />
+      </div> */}
+
+      <h1 className="font-wanted text-center text-6xl md:text-[96px] text-[#CCCCCC] pt-[40px] pb-[43px]">
+        BRODYPAETAU NFTS
+      </h1>
 
       {/* This is navbar */}
-      <div className=" flex justify-between items-center h-14 max-w-6xl mx-auto text-white px-2 border-b border-t border-gray-500">
-        <div onClick={handleNav}>
-          <AiOutlineMenu size={20} className="text-white" />
+      <div className="container flex justify-between items-center">
+        <div onClick={handleNav} className="flex flex-col  gap-y-[8px]">
+          <div className="h-[3px] w-[24px]  md:w-[42px] bg-[#cccccc]"></div>
+          <div className="h-[3px] w-[24px]  md:w-[42px] bg-[#cccccc]"></div>
+          <div className="h-[3px] w-[24px]  md:w-[42px] bg-[#cccccc]"></div>
         </div>
         <div
           className={
@@ -37,15 +43,12 @@ const Navbar = () => {
               : "ease-in-out duration-500 fixed top-[-100%] h-screen w-screen left-0 "
           }
         >
-          <div className="max-w-6xl mx-auto">
-            <div className="p-10 flex justify-between">
-              <div
-                onClick={handleNav}
-                className="text-black border rounded-full border-black p-1 cursor-pointer hover:bg-black hover:text-[#DEAF07]"
-              >
-                <AiOutlineClose />
+          <div className="max-w-[1300px] mx-auto ">
+            <div className="py-10 flex justify-between px-2">
+              <div onClick={handleNav} className="text-black cursor-pointer">
+                <AiOutlineClose size={20} />
               </div>
-              <div className="flex gap-x-2 text-black text-[20px]">
+              <div className="flex gap-x-[20px] text-black text-[20px]">
                 <FaDiscord />
                 <FaTwitter />
                 <FaInstagram />
@@ -55,11 +58,11 @@ const Navbar = () => {
               </div>
             </div>
 
-            <nav className="px-10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 text-black font-bold gap-4 cursor-pointer">
+            <nav className="max-w-[1000px] grid px-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-5 text-black font-bold gap-y-4 cursor-pointer">
               <NavLink to="/#" onClick={handleNav}>
                 Home
               </NavLink>
-              <NavLink to="/about" onClick={handleNav}>
+              <NavLink to="/about" onClick={handleNav} className="pl-0 md:pl-8">
                 About
               </NavLink>
               <ul>Previous Collections</ul>
@@ -72,13 +75,13 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex gap-x-2 pl-0 md:pl-44">
+        <div className="flex gap-x-2 md:gap-x-[18px] pl-0 md:pl-32 lg:pl-64">
           <button>Connect Wallet</button>
           <button>Collector Fund</button>
-          <button className="bg-[#DEAF07] hover:bg-white">Sign up</button>
+          <button className="bg-[#DEAF07] hover:bg-[#cccccc]">Sign up</button>
         </div>
         <div className="hidden md:flex">
-          <div className=" gap-x-4 text-white text-[20px] flex">
+          <div className=" gap-x-4 text-[#cccccc] text-[20px] md:text-[28px] flex">
             <FaDiscord />
             <FaTwitter />
             <FaInstagram />
