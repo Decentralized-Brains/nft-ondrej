@@ -28,9 +28,9 @@ const AboutDetails = () => {
   }, [id]);
 
   return (
-    <div className="text-white px-[10px] md:px-[100px] ">
+    <div className="text-white container">
       {/* image div */}
-      <div className="container">
+      <div>
         <div className="pt-[114px] pb-[80px]">
         <img
         src={heroImage}
@@ -39,7 +39,7 @@ const AboutDetails = () => {
       />
         </div>
         {/* download & des div */}
-        <div className="flex flex-col md:flex-row gap-[104px] items-center justify-center" >
+        <div className="flex flex-col md:flex-row gap-[104px] items-center justify-between" >
           <div className="md:basis-[690px]">
             <div className="pb-[25px]">
               <p className="text-[20px] pb-[22px] text-[#D9D9D9]">Download White Paper and Roadmap as .PDF</p>
@@ -112,7 +112,7 @@ const AboutDetails = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-start gap-x-[20px]  text-white text-[20px] py-8 md:py-[50px] container mx-auto">
+        <div className="flex items-center justify-start gap-x-[20px]  text-white text-[20px] py-8 md:py-[50px]">
                 <FaDiscord />
                 <FaTwitter />
                 <FaInstagram />
