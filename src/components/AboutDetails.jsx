@@ -28,9 +28,9 @@ const AboutDetails = () => {
   }, [id]);
 
   return (
-    <div className="text-white">
+    <div className="text-white container">
       {/* image div */}
-      <div className="container">
+      <div>
         <div className="pt-[114px] pb-[80px]">
         <img
         src={heroImage}
@@ -112,7 +112,7 @@ const AboutDetails = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-start gap-x-[20px]  text-white text-[20px] py-8 md:py-[50px] container mx-auto">
+        <div className="flex items-center justify-start gap-x-[20px]  text-white text-[20px] py-8 md:py-[50px]">
                 <FaDiscord />
                 <FaTwitter />
                 <FaInstagram />
