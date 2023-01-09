@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { DumyCard } from "./Data";
+import { useLocation } from "react-router-dom";
 
 const Info = () => {
+  // bring to top
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const navigate = useNavigate();
   const handleShowCard = (id) => {
-            navigate(`/about/${id}`);
-          };
+    navigate(`/about/${id}`);
+  };
   return (
     <div className="container  my-16 md:my-[50px] lg:my-[150px]">
       <div className="md:flex md:justify-center md:gap-[70px]">
@@ -15,15 +22,20 @@ const Info = () => {
           {DumyCard.map((record) => {
             return (
               <div
-              onClick={()=>{handleShowCard(record.id)}}
+                onClick={() => {
+                  handleShowCard(record.id);
+                }}
                 className="w-[195px] h-[250px] bg-[#DEAF07] p-[6px] rounded cursor-pointer"
-                key={record.id}>
+                key={record.id}
+              >
                 <img
                   src={record.img}
                   alt=""
                   className=" w-[181px] h-[181px] mx-auto rounded"
                 />
-                <h2 className="text-[14px] font-bold py-[5px]">{record.title}</h2>
+                <h2 className="text-[14px] font-bold py-[5px]">
+                  {record.title}
+                </h2>
                 <p className=" text-[8px]">{record.details}</p>
               </div>
             );
@@ -33,9 +45,9 @@ const Info = () => {
         {/* This is table */}
         <div className="">
           <div className="flex justify-center my-10 md:my-12 lg:my-12">
-              <button className="bg-[#DEAF07] text-base py-3 px-5 md:py-[16px] md:px-[84px]">
-                Enter To Competition
-              </button>
+            <button className="bg-[#DEAF07] text-base py-3 px-5 md:py-[16px] md:px-[84px]">
+              Enter To Competition
+            </button>
           </div>
           <div className="border rounded border-[#DEAF07]">
             <table className="w-[100%] md:w-[500px] xl:w-[690px] divide-y divide-[#DEAF07]">
@@ -107,7 +119,9 @@ const Info = () => {
           {DumyCard.map((record) => {
             return (
               <div
-              onClick={()=>{handleShowCard(record.id)}}
+                onClick={() => {
+                  handleShowCard(record.id);
+                }}
                 className="w-[195px] h-[250px] bg-[#DEAF07] p-[6px] rounded cursor-pointer"
                 key={record.id}
               >
@@ -116,7 +130,9 @@ const Info = () => {
                   alt=""
                   className=" w-[181px] h-[181px] mx-auto rounded"
                 />
-                <h2 className="text-[14px] font-bold py-[5px]">{record.title}</h2>
+                <h2 className="text-[14px] font-bold py-[5px]">
+                  {record.title}
+                </h2>
                 <p className=" text-[8px]">{record.details}</p>
               </div>
             );

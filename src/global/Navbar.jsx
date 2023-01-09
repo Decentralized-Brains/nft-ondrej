@@ -67,7 +67,9 @@ const Navbar = () => {
               </NavLink>
 
               <ul>Previous Collections</ul>
-              <ul>Collector Fund</ul>
+              <NavLink to="/info" onClick={handleNav} className="pl-0 md:pl-8">
+                Collector Fund
+              </NavLink>
               <ul>Connect Wallet</ul>
               <ul>Contact</ul>
               <ul>brodypaetau.com</ul>
