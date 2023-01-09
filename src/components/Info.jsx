@@ -1,7 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { DumyCard } from "./Data";
 
 const Info = () => {
+  const navigate = useNavigate();
+  const handleShowCard = (id) => {
+            navigate(`/about/${id}`);
+          };
   return (
     <div className="container  my-16 md:my-[50px] lg:my-[150px]">
       <div className="md:flex md:justify-center md:gap-[70px]">
@@ -10,9 +15,9 @@ const Info = () => {
           {DumyCard.map((record) => {
             return (
               <div
-                className="w-[195px] h-[250px] bg-[#DEAF07] p-[6px] rounded"
-                key={record.id}
-              >
+              onClick={()=>{handleShowCard(record.id)}}
+                className="w-[195px] h-[250px] bg-[#DEAF07] p-[6px] rounded cursor-pointer"
+                key={record.id}>
                 <img
                   src={record.img}
                   alt=""
@@ -102,7 +107,8 @@ const Info = () => {
           {DumyCard.map((record) => {
             return (
               <div
-                className="w-[195px] h-[250px] bg-[#DEAF07] p-[6px] rounded"
+              onClick={()=>{handleShowCard(record.id)}}
+                className="w-[195px] h-[250px] bg-[#DEAF07] p-[6px] rounded cursor-pointer"
                 key={record.id}
               >
                 <img
