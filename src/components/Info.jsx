@@ -44,7 +44,7 @@ const Info = () => {
 
         {/* This is table */}
         <div className="">
-          <div className="flex justify-center my-10 md:my-12 lg:my-12">
+          <div className="flex justify-center mb-10 md:mb-12">
             <button className="bg-[#DEAF07] text-base py-3 px-5 md:py-[16px] md:px-[84px]">
               Enter To Competition
             </button>
