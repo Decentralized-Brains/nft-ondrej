@@ -62,12 +62,12 @@ const Navbar = () => {
               <NavLink to="/#" onClick={handleNav}>
                 Home
               </NavLink>
-              <NavLink to="/about" onClick={handleNav} className="pl-0 md:pl-8">
+              <NavLink to="/about" onClick={handleNav}>
                 About
               </NavLink>
 
               <ul>Previous Collections</ul>
-              <NavLink to="/info" onClick={handleNav} className="pl-0 md:pl-8">
+              <NavLink to="/info" onClick={handleNav}>
                 Collector Fund
               </NavLink>
               <ul>Connect Wallet</ul>
