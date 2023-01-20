@@ -45,7 +45,7 @@ const Navbar = () => {
         >
           <div className="max-w-[1300px] mx-auto ">
             <div className="py-10 flex justify-between px-2">
-              <div onClick={handleNav} className="text-black cursor-pointer">
+              <div onClick={handleNav} className="text-black cursor-pointer md:px-[25px]">
                 <AiOutlineClose size={20} />
               </div>
               <div className="flex gap-x-[20px] text-black text-[20px]">
@@ -57,23 +57,23 @@ const Navbar = () => {
                 <FaReddit />
               </div>
             </div>
-
-            <nav className="max-w-[1000px] grid px-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-5 text-black font-bold gap-y-4 cursor-pointer">
-              <NavLink to="/#" onClick={handleNav}>
+{/* grid px-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-5 */}
+            <nav className="max-w-[1000px] grid px-2 md:px-[30px] grid-cols-2  md:flex md:flex-wrap  text-black font-bold gap-y-4 cursor-pointer">
+              <NavLink className=" md:pr-[95px]"  to="/#" onClick={handleNav}>
                 Home
               </NavLink>
-              <NavLink to="/about" onClick={handleNav}>
+              <NavLink className=" md:pr-[95px]"  to="/about" onClick={handleNav}>
                 About
               </NavLink>
 
-              <ul>Previous Collections</ul>
-              <NavLink to="/info" onClick={handleNav}>
+              <ul className=" md:pr-[78px]" >Previous Collections</ul>
+              <NavLink className=" md:pr-[84px]"  to="/info" onClick={handleNav}>
                 Collector Fund
               </NavLink>
-              <ul>Connect Wallet</ul>
-              <ul>Contact</ul>
-              <ul>brodypaetau.com</ul>
-              <ul>old.brodypaetau.com</ul>
+              <ul className="md:pr-[117px]" >Connect Wallet</ul>
+              <ul className=" md:pr-[42px]" >Contact</ul>
+              <ul className=" md:pr-[52px]" >brodypaetau.com</ul>
+              <ul className="" >old.brodypaetau.com</ul>
             </nav>
           </div>
         </div>
