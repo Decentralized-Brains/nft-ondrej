@@ -45,7 +45,7 @@ const Navbar = () => {
         >
           <div className="max-w-[1300px] mx-auto ">
             <div className="py-10 flex justify-between px-2">
-              <div onClick={handleNav} className="text-black cursor-pointer md:px-[25px]">
+              <div onClick={handleNav} className="text-black cursor-pointer pl-2 md:px-[25px]">
                 <AiOutlineClose size={20} />
               </div>
               <div className="flex gap-x-[20px] text-black text-[20px]">
@@ -58,7 +58,7 @@ const Navbar = () => {
               </div>
             </div>
 {/* grid px-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-5 */}
-            <nav className="max-w-[1000px] grid px-2 md:px-[30px] grid-cols-2  md:flex md:flex-wrap  text-black font-bold gap-y-4 cursor-pointer">
+            <nav className="max-w-[1000px] grid pl-5 md:px-[30px] grid-cols-2  md:flex md:flex-wrap  text-black font-bold gap-y-4 cursor-pointer">
               <NavLink className=" md:pr-[95px]"  to="/#" onClick={handleNav}>
                 Home
               </NavLink>
