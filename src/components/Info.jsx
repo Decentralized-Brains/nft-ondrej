@@ -43,75 +43,69 @@ const Info = () => {
         </div>
 
         {/* This is table */}
-        <div className="">
-          <div className="flex justify-center mb-10 md:mb-12">
-            <button className="bg-[#DEAF07] text-base py-3 px-5 md:py-[16px] md:px-[84px]">
-              Enter To Competition
-            </button>
-          </div>
-          <div className="border rounded border-[#DEAF07]">
-            <table className="w-[100%] md:w-[500px] xl:w-[690px] divide-y divide-[#DEAF07]">
-              <thead>
-                <tr>
-                  <th
-                    scope="col"
-                    className="px-5 md:px-6 py-3 text-left font-medium text-[#FCC607] uppercase"
-                  >
-                    Name
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-5 md:px-6 py-3 text-left font-medium text-[#FCC607] uppercase"
-                  >
-                    Age
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-5 md:px-6 py-3 text-left font-medium text-[#FCC607] uppercase"
-                  >
-                    Address
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
-                <tr>
-                  <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
-                    John Brown
-                  </td>
-                  <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                    45
-                  </td>
-                  <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                    New York No. 1 Lake Park
-                  </td>
-                </tr>
 
-                <tr>
-                  <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
-                    Jim Green
-                  </td>
-                  <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                    27
-                  </td>
-                  <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                    London No. 1 Lake Park
-                  </td>
-                </tr>
+        <div className="border border-[#DEAF07] rounded">
+          <table className="mx-auto w-full md:w-[500px] xl:w-[690px] divide-y divide-[#DEAF07] ">
+            <thead>
+              <tr>
+                <th
+                  scope="col"
+                  className="px-5 md:px-6 py-3 text-left font-medium text-[#FCC607] uppercase"
+                >
+                  Name
+                </th>
+                <th
+                  scope="col"
+                  className="px-5 md:px-6 py-3 text-left font-medium text-[#FCC607] uppercase"
+                >
+                  Age
+                </th>
+                <th
+                  scope="col"
+                  className="px-5 md:px-6 py-3 text-left font-medium text-[#FCC607] uppercase"
+                >
+                  Address
+                </th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
+              <tr>
+                <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
+                  John Brown
+                </td>
+                <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                  45
+                </td>
+                <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                  New York No.
+                </td>
+              </tr>
 
-                <tr>
-                  <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
-                    Joe Black
-                  </td>
-                  <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                    31
-                  </td>
-                  <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                    Sidney No. 1 Lake Park
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+              <tr>
+                <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
+                  Jim Green
+                </td>
+                <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                  27
+                </td>
+                <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                  London No.
+                </td>
+              </tr>
+
+              <tr>
+                <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
+                  Joe Black
+                </td>
+                <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                  31
+                </td>
+                <td className="px-5 md:px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                  Sidney No.
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         {/* This is card */}
