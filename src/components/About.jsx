@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const About = () => {
   const navigate = useNavigate();
   return (
-    <div className="text-white container">
+    <div className="text-white container pb-16">
       {/* image div */}
 
       <div className="pt-[114px] pb-[80px]">
