@@ -1,33 +1,23 @@
 import React from "react";
-import { CardData } from "./Data";
-import AboutGif from "../assets/about-gif.gif";
 import { useNavigate } from "react-router-dom";
+import { CardData } from "./Data";
+import { Link } from "react-router-dom";
 
-const About = () => {
+//slice data into first 3 items
+const FirstSix = CardData.slice(0, 6);
+
+const RecentCollection = () => {
   const navigate = useNavigate();
   return (
-    <div className="text-white container">
-      {/* image div */}
-
-      <div className="pt-[114px] pb-[80px]">
-        <img
-          src={AboutGif}
-          alt=""
-          className="object-fit h-80 md:h-[562px] w-[1234px] border border-[#FCC607] p-3"
-        />
-      </div>
-
-      {/* Previous collection */}
-
+    <div className="container">
       {/* Title */}
       <h2 className="text-[32px] text-white font-normal pb-[34px] pl-4">
-        Previous Collection
+        Recent Collection
       </h2>
 
-      {/* Previous collection Card*/}
-
+      {/* Cards */}
       <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[89px] gap-y-[87px] ">
-        {CardData.map((record) => {
+        {FirstSix.map((record) => {
           const handleShowCard = (id) => {
             navigate(`/about/${id}`);
           };
@@ -45,15 +35,22 @@ const About = () => {
               <h2 className="text-[24px] font-base pt-[19px] cursor-pointer px-1">
                 {record.title}
               </h2>
-              <p className="text-[13px] font-base px-1  h-10 overflow-hidden">
+              <p className="text-[13px] font-base px-1 h-10 overflow-hidden">
                 {record.details}
               </p>
             </div>
           );
         })}
       </div>
+
+      {/* Button */}
+      <div className="flex justify-center py-10">
+        <Link to="/previouscollection">
+          <button className=" px-[34px]">Show more</button>
+        </Link>
+      </div>
     </div>
   );
 };
 
-export default About;
+export default RecentCollection;

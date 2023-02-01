@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Hero from "./Hero";
-import PreviousCollection from "./PreviousCollection";
+import RecentCollection from "./RecentCollection";
 
 const Home = () => {
   // bring to top
@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <PreviousCollection />
+      <RecentCollection />
     </div>
   );
 };

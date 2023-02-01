@@ -6,7 +6,7 @@ export const CardData = [
     img: Card,
     title: "Lorem Ipsum",
     details:
-      "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.",
+      "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. ",
   },
   {
     id: 2,
@@ -31,6 +31,41 @@ export const CardData = [
   },
   {
     id: 5,
+    img: Card,
+    title: "Lorem Ipsum",
+    details:
+      "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.",
+  },
+  {
+    id: 6,
+    img: Card,
+    title: "Lorem Ipsum",
+    details:
+      "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.",
+  },
+  {
+    id: 7,
+    img: Card,
+    title: "Lorem Ipsum",
+    details:
+      "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.",
+  },
+  {
+    id: 8,
+    img: Card,
+    title: "Lorem Ipsum",
+    details:
+      "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.",
+  },
+  {
+    id: 9,
+    img: Card,
+    title: "Lorem Ipsum",
+    details:
+      "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.",
+  },
+  {
+    id: 10,
     img: Card,
     title: "Lorem Ipsum",
     details:

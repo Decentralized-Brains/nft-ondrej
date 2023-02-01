@@ -12,7 +12,7 @@ import BlackOpenSea from "../assets/black-openSea.png";
 import GrayOpenSea from "../assets/gray-openSea.png";
 
 import { HiMailOpen } from "react-icons/hi";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -74,14 +74,40 @@ const Navbar = () => {
                 About
               </NavLink>
 
-              <ul className=" lg:pr-[78px]">Previous Collections</ul>
+              <NavLink
+                className=" lg:pr-[78px]"
+                to="/previouscollection"
+                onClick={handleNav}
+              >
+                Previous Collections
+              </NavLink>
               <NavLink className=" lg:pr-[68px]" to="/info" onClick={handleNav}>
                 Collector Fund
               </NavLink>
               <ul className="lg:pr-[117px]">Connect Wallet</ul>
-              <ul className=" lg:pr-[66px]">Contact</ul>
-              <ul className=" lg:pr-[66px]">brodypaetau.com</ul>
-              <ul className="lg:pr-[70px]">old.brodypaetau.com</ul>
+              <NavLink
+                className=" lg:pr-[66px]"
+                to="/contact"
+                onClick={handleNav}
+              >
+                Contact
+              </NavLink>
+              <a
+                className=" lg:pr-[66px]"
+                rel="noreferrer"
+                href="http://brodypaetau.com/"
+                target="_blank"
+              >
+                brodypaetau.com
+              </a>
+              <a
+                className="lg:pr-[70px]"
+                rel="noreferrer"
+                href="https://old.brodypaetau.com/"
+                target="_blank"
+              >
+                old.brodypaetau.com
+              </a>
               <ul className="">Mailing List</ul>
             </nav>
           </div>
@@ -89,7 +115,9 @@ const Navbar = () => {
 
         <div className="flex gap-x-1 md:gap-x-[18px] pl-0 md:pl-32 lg:pl-64">
           <button>Connect Wallet</button>
-          <button>Collector Fund</button>
+          <Link to="/info">
+            <button>Collector Fund</button>
+          </Link>
           <button>Mailing List</button>
         </div>
         <div className="hidden md:flex">
