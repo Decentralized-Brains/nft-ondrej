@@ -1,58 +1,35 @@
-import React from "react";
-import { CardData } from "./Data";
-import AboutGif from "../assets/about-gif.gif";
-import { useNavigate } from "react-router-dom";
+import HeroGif from "../assets/card.gif";
+import OurJourney from "./OurJourney.jsx";
+import Team from "./Team.jsx";
 
 const About = () => {
-  const navigate = useNavigate();
   return (
-    <div className="text-white container pb-16">
-      {/* image div */}
-
-      <div className="pt-[114px] pb-[80px]">
-        <img
-          src={AboutGif}
-          alt=""
-          className="object-fit h-80 md:h-[562px] w-[1234px] border border-[#FCC607] p-3"
-        />
+    <>
+      <div className="container flex py-5 md:py-24 md:flex-row flex-col items-center">
+        <div className="lg:flex-grow md:w-5/6  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 className="text-4xl sm:text-[70px] font-bold text-[#DEAF07] sm:leading-[80px]">
+            A MARKETPLACE LIKE NO OTHER
+          </h1>
+          <p className="py-10 text-[#D9D9D9]  sm:text-[20px]">
+            find all the lotto winning numbers and see if you won the latest
+            lotto jackpots. find all the lotto winning numbers and see if you
+            won the latest lotto jackpots
+          </p>
+          <button className="bg-transparent text-[#DEAF07] rounded border-t-[#DEAF07] border-l-transparent border-r-transparent  border-b-[#DEAF07]    hover:text-[#D9D9D9]">
+            Learn More
+          </button>
+        </div>
+        <div className="lg:max-w-lg lg:w-full ">
+          <img
+            src={HeroGif}
+            alt=""
+            className="w-64 mx-auto h-[350px] object-cover rounded-t-full rounded-b-full border p-2 border-[#DEAF07]"
+          />
+        </div>
       </div>
-
-      {/* Previous collection */}
-
-      {/* Title */}
-      <h2 className="text-[32px] text-white font-normal pb-[34px] pl-4">
-        Previous Collection
-      </h2>
-
-      {/* Previous collection Card*/}
-
-      <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[89px] gap-y-[87px] ">
-        {CardData.map((record) => {
-          const handleShowCard = (id) => {
-            navigate(`/about/${id}`);
-          };
-          return (
-            <div
-              onClick={() => handleShowCard(record.id)}
-              className="max-w-[350px] h-[450px] bg-[#DEAF07] p-[13px] rounded hover:-translate-y-2 duration-300"
-              key={record.id}
-            >
-              <img
-                src={record.img}
-                alt=""
-                className="h-[325px] w-[325px] mx-auto rounded"
-              />
-              <h2 className="text-[24px] font-base pt-[19px] cursor-pointer px-1">
-                {record.title}
-              </h2>
-              <p className="text-[13px] font-base px-1  h-10 overflow-hidden">
-                {record.details}
-              </p>
-            </div>
-          );
-        })}
-      </div>
-    </div>
+      <OurJourney />
+      <Team />
+    </>
   );
 };
 
