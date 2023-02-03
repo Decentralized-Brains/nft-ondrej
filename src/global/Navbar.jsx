@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import BlackOpenSea from "../assets/black-openSea.png";
 import GrayOpenSea from "../assets/gray-openSea.png";
+import MailingListModal from "../components/MailingListModal";
 
 import { HiMailOpen } from "react-icons/hi";
 import { Link, NavLink } from "react-router-dom";
@@ -21,17 +22,24 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  const [showMyModal, setShowMyModal] = useState(false);
+  const handleOnClose = () => setShowMyModal(false);
+
+  //scroll lock when modal is open
+  showMyModal
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "auto");
+
   return (
     <div className="text-white font-sans px-2">
       {/* This is logo */}
       {/* <div className="flex justify-center">
         <img src={Logo} alt="" className="w-[528px] h-[67px]" />
       </div> */}
-
       <h1 className="font-wanted text-center text-6xl md:text-[96px] text-[#CCCCCC] pt-[40px] pb-[43px]">
         BRODYPAETAU NFTS
       </h1>
-
+      <MailingListModal onClose={handleOnClose} visible={showMyModal} />
       {/* This is navbar */}
       <div className="container flex justify-between items-center">
         <div onClick={handleNav} className="flex flex-col  gap-y-[8px]">
@@ -108,7 +116,14 @@ const Navbar = () => {
               >
                 old.brodypaetau.com
               </a>
-              <ul className="">Mailing List</ul>
+              <ul
+                className=""
+                onClick={() => {
+                  setShowMyModal(true);
+                }}
+              >
+                Mailing List
+              </ul>
             </nav>
           </div>
         </div>
@@ -118,7 +133,13 @@ const Navbar = () => {
           <Link to="/info">
             <button>Collector Fund</button>
           </Link>
-          <button>Mailing List</button>
+          <button
+            onClick={() => {
+              setShowMyModal(true);
+            }}
+          >
+            Mailing List
+          </button>
         </div>
         <div className="hidden md:flex">
           <div className=" gap-x-4 text-[#cccccc] text-[20px] md:text-[28px] flex">
