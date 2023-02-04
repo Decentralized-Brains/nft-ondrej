@@ -50,7 +50,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "bg-yellow-400 fixed left-0 top-0 w-full h-[300px] md:h-[250px] ease-in-out duration-500 text-base z-50"
+              ? "bg-yellow-400 fixed left-0 top-0 w-full h-[220px] ease-in-out duration-500 text-base z-50"
               : "ease-in-out duration-500 fixed top-[-100%] h-screen w-screen left-0 "
           }
         >
@@ -70,38 +70,27 @@ const Navbar = () => {
               </div>
             </div>
             {/* grid px-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-5 */}
-            <nav className="max-w-[1000px] grid pl-2 lg:pl-0 md:px-[30px] grid-cols-2 md:grid-cols-4   lg:flex lg:flex-wrap  text-black font-bold gap-y-4 cursor-pointer">
-              <NavLink className=" lg:pr-[79px]" to="/#" onClick={handleNav}>
+            <nav className="max-w-[1000px] md:flex flex-wrap text-black font-bold gap-x-5 gap-y-2 md:gap-10 lg:gap-16 cursor-pointer grid  grid-cols-2 px-2 lg:px-0">
+              <NavLink className="" to="/#" onClick={handleNav}>
                 Home
               </NavLink>
-              <NavLink
-                className=" lg:pr-[148px]"
-                to="/about"
-                onClick={handleNav}
-              >
+              <NavLink className="" to="/about" onClick={handleNav}>
                 About
               </NavLink>
 
               <NavLink
-                className=" lg:pr-[78px]"
+                className=""
                 to="/previouscollection"
                 onClick={handleNav}
               >
                 Previous Collections
               </NavLink>
-              <NavLink className=" lg:pr-[68px]" to="/info" onClick={handleNav}>
-                Collector Fund
-              </NavLink>
-              <ul className="lg:pr-[117px]">Connect Wallet</ul>
-              <NavLink
-                className=" lg:pr-[66px]"
-                to="/contact"
-                onClick={handleNav}
-              >
+
+              <NavLink className="" to="/contact" onClick={handleNav}>
                 Contact
               </NavLink>
               <a
-                className=" lg:pr-[66px]"
+                className=""
                 rel="noreferrer"
                 href="http://brodypaetau.com/"
                 target="_blank"
@@ -109,21 +98,13 @@ const Navbar = () => {
                 brodypaetau.com
               </a>
               <a
-                className="lg:pr-[70px]"
+                className=""
                 rel="noreferrer"
                 href="https://old.brodypaetau.com/"
                 target="_blank"
               >
                 old.brodypaetau.com
               </a>
-              <ul
-                className=""
-                onClick={() => {
-                  setShowMyModal(true);
-                }}
-              >
-                Mailing List
-              </ul>
             </nav>
           </div>
         </div>
