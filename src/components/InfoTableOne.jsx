@@ -4,9 +4,7 @@ import ProfilePic from "../assets/propic.jpg";
 const InfoTableOne = () => {
   return (
     <div className="my-16">
-      <button className="text-base px-4 md:px-[40px] py-2 md:py-[10px] bg-[#FCC607] rounded mb-10">
-        Top 10
-      </button>
+      <button className="text-sm  bg-[#FCC607] rounded mb-10">Top 10</button>
       <div className=" overflow-x-auto sm:rounded-lg border border-[#FCC607]">
         <table className="w-full text-sm md:text-base  text-[#D9D9D9] text-center">
           <thead className="text-xs md:text-base uppercase text-[#FCC607] border-b border-gray-600">
