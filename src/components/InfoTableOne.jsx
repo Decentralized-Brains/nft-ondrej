@@ -4,16 +4,15 @@ import ProfilePic from "../assets/propic.jpg";
 const InfoTableOne = () => {
   return (
     <div className="my-16">
-      <button className="text-sm  bg-[#FCC607] rounded mb-10">Top 10</button>
       <div className=" overflow-x-auto sm:rounded-lg border border-[#FCC607]">
         <table className="w-full text-sm md:text-base  text-[#D9D9D9] text-center">
-          <thead className="text-xs md:text-base uppercase text-[#FCC607] border-b border-gray-600">
+          <thead className="text-xs md:text-base text-[#FCC607] border-b border-gray-600">
             <tr>
               <th scope="col" className="px-6 py-3">
-                Username
+                Collector
               </th>
               <th scope="col" className="px-4 py-3">
-                NFT(Bought)
+                NFTs Bought
               </th>
               <th scope="col" className="px-4 py-3">
                 Spent
@@ -45,7 +44,9 @@ const InfoTableOne = () => {
               </td>
               <td className="px-4 py-3">6</td>
               <td className="px-4 py-3">0.0025 ETH</td>
-              <td className="px-4 py-3">#asdjb239594549</td>
+              <td className="px-4 py-3 cursor-pointer">
+                Link to Etherscan wallet
+              </td>
               <td className="px-4 py-3">8</td>
             </tr>
             <tr className="hover:bg-yellow-100 hover:bg-opacity-10">
@@ -66,7 +67,9 @@ const InfoTableOne = () => {
               </td>
               <td className="px-4 py-3">6</td>
               <td className="px-4 py-3">0.0025 ETH</td>
-              <td className="px-4 py-3">#asdjb239594549</td>
+              <td className="px-4 py-3 cursor-pointer">
+                Link to Etherscan wallet
+              </td>
               <td className="px-4 py-3">8</td>
             </tr>
             <tr className="hover:bg-yellow-100 hover:bg-opacity-10">
@@ -87,7 +90,9 @@ const InfoTableOne = () => {
               </td>
               <td className="px-4 py-3">6</td>
               <td className="px-4 py-3">0.0025 ETH</td>
-              <td className="px-4 py-3">#asdjb239594549</td>
+              <td className="px-4 py-3 cursor-pointer">
+                Link to Etherscan wallet
+              </td>
               <td className="px-4 py-3">8</td>
             </tr>
           </tbody>

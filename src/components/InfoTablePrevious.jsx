@@ -1,10 +1,12 @@
 import React from "react";
 import ProfilePic from "../assets/propic.jpg";
 
-const InfoTableTwo = () => {
+const InfoTablePrevious = () => {
   return (
     <div className="my-16">
-      <button className="text-sm bg-[#FCC607] rounded mb-10">TOP 11-20</button>
+      <button className="text-sm bg-[#FCC607] rounded mb-10">
+        Previous month
+      </button>
       <div className=" overflow-x-auto sm:rounded-lg border border-[#FCC607]">
         <table className="w-full text-sm md:text-base  text-[#D9D9D9] text-center">
           <thead className="text-xs md:text-base text-[#FCC607] border-b border-gray-600">
@@ -22,7 +24,7 @@ const InfoTableTwo = () => {
                 Wallet Address
               </th>
               <th scope="col" className="px-4 py-3">
-                Below top 10
+                Previous Top 10
               </th>
             </tr>
           </thead>
@@ -103,4 +105,4 @@ const InfoTableTwo = () => {
   );
 };
 
-export default InfoTableTwo;
+export default InfoTablePrevious;

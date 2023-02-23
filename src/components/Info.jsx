@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import InfoTableOne from "./InfoTableOne";
 import InfoTableTwo from "./InfoTableTwo";
+import InfoTablePrevious from "./InfoTablePrevious";
 import { useLocation } from "react-router-dom";
 
 const Info = () => {
@@ -10,27 +11,52 @@ const Info = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  // get hours left in month
+
+  const date = new Date();
+  const daysLeft =
+    new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate() -
+    date.getDate();
+
+  const hoursLeft = 24 - date.getHours();
+  const minutesLeft = 60 - date.getMinutes();
+  const secondsLeft = 60 - date.getSeconds();
+
+  console.log(daysLeft, " ", hoursLeft, "", minutesLeft, "", secondsLeft);
+
+  // Creating a date object
+  var today = new Date();
+
+  // Getting full month name (e.g. "June")
+  var month = today.toLocaleString("default", { month: "long" }).toUpperCase();
+
   return (
     <div className="container  my-16 md:my-[60px] ">
       <div>
         {/* Button */}
         <div>
           <div className="flex justify-between items-end">
-            <button className="text-base px-4 md:px-[40px] py-2 md:py-[10px] bg-[#FCC607]">
-              Enter To Competition
-            </button>
+            <button className="text-sm  bg-[#FCC607] rounded ">Top 10</button>
             <div>
-              <div className="text-[#D9D9D9] text-base pb-2">
-                THIS MONTH ENDS IN
+              <div className="text-[#D9D9D9] text-base pb-2 capitalize">
+                {month} MONTH ENDS IN
               </div>
               <div className="text-base flex gap-1 md:gap-2 items-center">
-                <span className="bg-[#FCC607] p-1 md:p-[10px] rounded">01</span>
+                <span className="bg-[#FCC607] p-1 md:p-[10px] rounded">
+                  {daysLeft} d
+                </span>
                 <span className="text-[#D9D9D9]">:</span>
-                <span className="bg-[#FCC607] p-1 md:p-[10px] rounded">17</span>
+                <span className="bg-[#FCC607] p-1 md:p-[10px] rounded">
+                  {hoursLeft} h
+                </span>
                 <span className="text-[#D9D9D9]">:</span>
-                <span className="bg-[#FCC607] p-1 md:p-[10px] rounded">42</span>
+                <span className="bg-[#FCC607] p-1 md:p-[10px] rounded">
+                  {minutesLeft} m
+                </span>
                 <span className="text-[#D9D9D9]">:</span>
-                <span className="bg-[#FCC607] p-1 md:p-[10px] rounded">25</span>
+                <span className="bg-[#FCC607] p-1 md:p-[10px] rounded">
+                  {secondsLeft} s
+                </span>
               </div>
             </div>
           </div>
@@ -38,6 +64,9 @@ const Info = () => {
 
         {/* Table 1*/}
         <InfoTableOne />
+
+        {/* Previous table */}
+        <InfoTablePrevious />
 
         {/* Table 2*/}
         <InfoTableTwo />

@@ -13,10 +13,14 @@ import GrayOpenSea from "../assets/gray-openSea.png";
 import MailingListModal from "../components/MailingListModal";
 
 import { HiMailOpen } from "react-icons/hi";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+
+  let activeStyle = {
+    backgroundColor: "#FCC607",
+  };
 
   const handleNav = () => {
     setNav(!nav);
@@ -111,9 +115,14 @@ const Navbar = () => {
 
         <div className="flex gap-x-1 md:gap-x-[18px] pl-0 md:pl-32 lg:pl-64">
           <button>Connect Wallet</button>
-          <Link to="/info">
-            <button>Collector Fund</button>
-          </Link>
+          <NavLink
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            to="/info"
+            className="border border-black rounded-full px-2 sm:px-[20px] py-[5px] sm:py-[10px] bg-[#cccccc]
+     text-black text-sm sm:text-[13px] font-normal hover:bg-[#DEAF07] duration-300;"
+          >
+            Collector Fund
+          </NavLink>
           <button
             onClick={() => {
               setShowMyModal(true);
