@@ -65,11 +65,11 @@ const Info = () => {
         {/* Table 1*/}
         <InfoTableOne />
 
-        {/* Previous table */}
-        <InfoTablePrevious />
-
         {/* Table 2*/}
         <InfoTableTwo />
+
+        {/* Previous table */}
+        <InfoTablePrevious />
       </div>
     </div>
   );

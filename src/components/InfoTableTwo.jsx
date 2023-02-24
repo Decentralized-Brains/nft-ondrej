@@ -22,7 +22,7 @@ const InfoTableTwo = () => {
                 Wallet Address
               </th>
               <th scope="col" className="px-4 py-3">
-                Below top 10
+                Previously in Top 10
               </th>
             </tr>
           </thead>
@@ -46,9 +46,16 @@ const InfoTableTwo = () => {
               <td className="px-4 py-3">6</td>
               <td className="px-4 py-3">0.0025 ETH</td>
               <td className="px-4 py-3 cursor-pointer">
-                Link to Etherscan wallet
+                <a
+                  target="_blank"
+                  href="https://testnet.bscscan.com/token/0x86B641E9563544f941A3c9a94AD8f66b62febC98#readContract"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  0x86B641E9563544f941A3c9a94AD8f66b62febC98
+                </a>
               </td>
-              <td className="px-4 py-3">8</td>
+              <td className="px-4 py-3">8 Times</td>
             </tr>
             <tr className="hover:bg-yellow-100 hover:bg-opacity-10">
               <td className="px-6 py-3 font-medium  ">
@@ -69,9 +76,16 @@ const InfoTableTwo = () => {
               <td className="px-4 py-3">6</td>
               <td className="px-4 py-3">0.0025 ETH</td>
               <td className="px-4 py-3 cursor-pointer">
-                Link to Etherscan wallet
+                <a
+                  target="_blank"
+                  href="https://testnet.bscscan.com/token/0x86B641E9563544f941A3c9a94AD8f66b62febC98#readContract"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  0x86B641E9563544f941A3c9a94AD8f66b62febC98
+                </a>
               </td>
-              <td className="px-4 py-3">8</td>
+              <td className="px-4 py-3">8 Times</td>
             </tr>
             <tr className="hover:bg-yellow-100 hover:bg-opacity-10">
               <td className="px-6 py-3 font-medium  ">
@@ -92,9 +106,16 @@ const InfoTableTwo = () => {
               <td className="px-4 py-3">6</td>
               <td className="px-4 py-3">0.0025 ETH</td>
               <td className="px-4 py-3 cursor-pointer">
-                Link to Etherscan wallet
+                <a
+                  target="_blank"
+                  href="https://testnet.bscscan.com/token/0x86B641E9563544f941A3c9a94AD8f66b62febC98#readContract"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  0x86B641E9563544f941A3c9a94AD8f66b62febC98
+                </a>
               </td>
-              <td className="px-4 py-3">8</td>
+              <td className="px-4 py-3">8 Times</td>
             </tr>
           </tbody>
         </table>
