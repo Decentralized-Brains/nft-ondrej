@@ -12,16 +12,22 @@ const InfoTableOne = () => {
                 Collector
               </th>
               <th scope="col" className="px-4 py-3">
-                NFTs Bought
-              </th>
-              <th scope="col" className="px-4 py-3">
-                Spent
-              </th>
-              <th scope="col" className="px-4 py-3">
                 Wallet Address
               </th>
               <th scope="col" className="px-4 py-3">
+                NFTs Bought this month
+              </th>
+              <th scope="col" className="px-4 py-3">
+                Spent this month
+              </th>
+              <th scope="col" className="px-4 py-3">
+                Payout to be Recived
+              </th>
+              <th scope="col" className="px-4 py-3">
                 Previously in Top 10
+              </th>
+              <th scope="col" className="px-4 py-3">
+                Total Recived
               </th>
             </tr>
           </thead>
@@ -42,19 +48,21 @@ const InfoTableOne = () => {
                   </div>
                 </div>
               </td>
-              <td className="px-4 py-3">6</td>
-              <td className="px-4 py-3">0.0025 ETH</td>
-              <td className="px-4 py-3 cursor-pointer">
+              <td className="px-4 py-3 cursor-pointer truncate max-w-xs">
                 <a
                   target="_blank"
                   href="https://testnet.bscscan.com/token/0x86B641E9563544f941A3c9a94AD8f66b62febC98#readContract"
                   rel="noreferrer"
                 >
                   {" "}
-                  0x86B641E9563544f941A3c9a94AD8f66b62febC98
+                  https://testnet.bscscan.com/token/0x86B641E9563544f941A3c9a94AD8f66b62febC98#readContract
                 </a>
               </td>
+              <td className="px-4 py-3">6</td>
+              <td className="px-4 py-3">0.0025 ETH</td>
+              <td className="px-4 py-3">0.103456 ETH</td>
               <td className="px-4 py-3">8 Times</td>
+              <td className="px-4 py-3">1.345 ETH</td>
             </tr>
             <tr className="hover:bg-yellow-100 hover:bg-opacity-10">
               <td className="px-6 py-3 font-medium  ">
@@ -72,19 +80,21 @@ const InfoTableOne = () => {
                   </div>
                 </div>
               </td>
-              <td className="px-4 py-3">6</td>
-              <td className="px-4 py-3">0.0025 ETH</td>
-              <td className="px-4 py-3 cursor-pointer">
+              <td className="px-4 py-3 cursor-pointer truncate max-w-xs">
                 <a
                   target="_blank"
                   href="https://testnet.bscscan.com/token/0x86B641E9563544f941A3c9a94AD8f66b62febC98#readContract"
                   rel="noreferrer"
                 >
                   {" "}
-                  0x86B641E9563544f941A3c9a94AD8f66b62febC98
+                  https://testnet.bscscan.com/token/0x86B641E9563544f941A3c9a94AD8f66b62febC98#readContract
                 </a>
               </td>
+              <td className="px-4 py-3">6</td>
+              <td className="px-4 py-3">0.0025 ETH</td>
+              <td className="px-4 py-3">0.103456 ETH</td>
               <td className="px-4 py-3">8 Times</td>
+              <td className="px-4 py-3">1.345 ETH</td>
             </tr>
             <tr className="hover:bg-yellow-100 hover:bg-opacity-10">
               <td className="px-6 py-3 font-medium  ">
@@ -102,19 +112,20 @@ const InfoTableOne = () => {
                   </div>
                 </div>
               </td>
-              <td className="px-4 py-3">6</td>
-              <td className="px-4 py-3">0.0025 ETH</td>
-              <td className="px-4 py-3 cursor-pointer">
+              <td className="px-4 py-3 cursor-pointer truncate max-w-xs">
                 <a
                   target="_blank"
                   href="https://testnet.bscscan.com/token/0x86B641E9563544f941A3c9a94AD8f66b62febC98#readContract"
                   rel="noreferrer"
                 >
-                  {" "}
-                  0x86B641E9563544f941A3c9a94AD8f66b62febC98
+                  https://testnet.bscscan.com/token/0x86B641E9563544f941A3c9a94AD8f66b62febC98#readContract
                 </a>
               </td>
+              <td className="px-4 py-3">6</td>
+              <td className="px-4 py-3">0.0025 ETH</td>
+              <td className="px-4 py-3">0.103456 ETH</td>
               <td className="px-4 py-3">8 Times</td>
+              <td className="px-4 py-3">1.345 ETH</td>
             </tr>
           </tbody>
         </table>

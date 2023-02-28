@@ -36,7 +36,16 @@ const Info = () => {
         {/* Button */}
         <div>
           <div className="flex justify-between items-end">
-            <button className="text-sm  bg-[#FCC607] rounded ">Top 10</button>
+            <div className="flex justify-center items-center gap-2  ">
+              <button className="text-sm  bg-[#FCC607] rounded ">Top 10</button>
+              <div className="font-wanted text-xl md:text-4xl text-[#d7d7d7]">
+                Current Fund Amount: 1.036ETH{" "}
+                <span className="pl-4">
+                  {" "}
+                  Expected payout for each TOP 10 collector: 0.103456
+                </span>
+              </div>
+            </div>
             <div>
               <div className="text-[#D9D9D9] text-base pb-2 capitalize">
                 {month} MONTH ENDS IN
