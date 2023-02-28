@@ -1,12 +1,12 @@
-import Main from "../assets/about-us/Cameltoe Bride a beauty with pride.jpg";
+import Main from "../assets/about-us/CameltoeBrideabeautywithpride.jpg";
 import AboutImg from "../assets/about-us/104.jpeg";
-import Art from "../assets/about-us/Artforum Accident.jpg";
-import Dog from "../assets/about-us/Dog Carpets (1).jpg";
+import Art from "../assets/about-us/ArtforumAccident.jpg";
+import Dog from "../assets/about-us/DogCarpets.jpg";
 import Story from "../assets/about-us/Artstar.jpg";
 import COLLECTIBLE1 from "../assets/about-us/126.jpeg";
 import COLLECTIBLE2 from "../assets/about-us/157.jpeg";
 import COLLECTIBLE3 from "../assets/about-us/143.jpeg";
-import RoadMap from "./Readmap.jsx";
+import RoadMap from "./Roadmap.jsx";
 
 import Team from "./Team.jsx";
 
