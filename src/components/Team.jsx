@@ -4,14 +4,10 @@ import { TeamData } from "./Data.jsx";
 
 const Team = () => {
   return (
-    <div className="container py-10 md:py-24">
-      <h1 className="text-4xl sm:text-[70px] font-bold text-[#DEAF07] sm:leading-[80px] text-center">
-        MEET OUR TEAM
+    <div className="container">
+      <h1 className="text-4xl sm:text-6xl md:text-[100px] text-[#DEAF07] sm:leading-[80px] text-center font-wanted">
+        TEAM MEMBERS
       </h1>
-      <p className="py-10 text-[#D9D9D9] sm:text-[20px] max-w-2xl text-center mx-auto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorum
-        quia rerum totam ipsum inventore consequuntur corporis delectus, ratione
-      </p>
 
       {/* Team card */}
 
