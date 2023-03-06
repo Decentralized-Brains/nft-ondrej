@@ -1,11 +1,19 @@
-import Main from "../assets/about-us/CameltoeBrideabeautywithpride.jpg";
+import Main from "../assets/about-us/Cameltoe Bride The perfect glide.jpg";
 import AboutImg from "../assets/about-us/104.jpeg";
 import Art from "../assets/about-us/ArtforumAccident.jpg";
-import Dog from "../assets/about-us/DogCarpets.jpg";
-import Story from "../assets/about-us/Artstar.jpg";
+import Dog1 from "../assets/about-us/DogCarpets.jpg";
+import Dog2 from "../assets/about-us/Gog Carpets 2.jpg";
+import Dog3 from "../assets/about-us/Gartenzwerg.jpg";
+import Story1 from "../assets/about-us/Artstar.jpg";
+import Story2 from "../assets/about-us/Hitler_Self_Portraits.jpg";
 import COLLECTIBLE1 from "../assets/about-us/126.jpeg";
 import COLLECTIBLE2 from "../assets/about-us/157.jpeg";
 import COLLECTIBLE3 from "../assets/about-us/143.jpeg";
+import H1 from "../assets/about-us/122.jpeg";
+import H2 from "../assets/about-us/134.jpeg";
+import H3 from "../assets/about-us/135.jpeg";
+import Vison from "../assets/about-us/Cameltoe Bride She will abide.jpg";
+
 import RoadMap from "./Roadmap.jsx";
 
 import Team from "./Team.jsx";
@@ -13,19 +21,24 @@ import Team from "./Team.jsx";
 const About = () => {
   return (
     <>
-      <div className="container flex py-5 md:py-24 md:flex-row flex-col items-center">
+      <div className="flex items-center justify-center gap-10 flex-wrap py-5 md:pb-18 mt-5">
+        <img src={H1} alt="" className="h-36 md:h-52 rounded-full" />
+        <img src={H2} alt="" className="h-36 md:h-52 rounded-full" />
+        <img src={H3} alt="" className="h-36 md:h-52 rounded-full" />
+      </div>
+      <div className="container flex  md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-5/6  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="text-4xl sm:text-6xl md:text-[100px] mb-6 text-[#DEAF07] sm:leading-[80px] font-wanted mx-auto">
-            CAMELTOEBRIDES
+          <h1 className="text-4xl sm:text-6xl md:text-[100px] my-10 text-[#DEAF07] sm:leading-[80px] font-wanted mx-auto ">
+            CAMELTOE BRIDES
           </h1>
-          <img src={Main} alt="" className="h-[80%] w-[80%] mx-auto" />
+          <img src={Main} alt="" className="h-full w-full mx-auto " />
           {/* ABOUT THE CAMEL TO EBRIDES */}
           <div className="flex justify-center items-center flex-col my-10 px-2 md:px-0">
             <h1 className="text-4xl sm:text-6xl md:text-[100px] mb-6 text-[#DEAF07] sm:leading-[80px] font-wanted mx-auto py-10">
               ABOUT THE CAMEL TO EBRIDES
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-              <p className="text-justify text-[#d7d7d7] flex flex-col gap-10">
+            <div className="grid grid-cols-1 gap-20">
+              <p className="text-justify text-[#d7d7d7] text-[20px] flex flex-col gap-10">
                 <span>
                   The Cameltoe Brides is a unique and thought-provoking series
                   of NFT art created by visual artists BrodyPaetau. Comprising
@@ -86,7 +99,7 @@ const About = () => {
                 <img
                   src={AboutImg}
                   alt=""
-                  className="w-[30rem] object-cover border-2 border-[#DEAF07]"
+                  className=" object-cover border-2 border-[#DEAF07]"
                 />
               </div>
             </div>
@@ -96,8 +109,8 @@ const About = () => {
             <h1 className="text-4xl sm:text-6xl md:text-[100px] mb-6 text-[#DEAF07] sm:leading-[80px] font-wanted mx-auto py-10">
               THE BRODYPAETAU STORY
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-              <p className="text-justify text-[#d7d7d7] flex flex-col gap-2">
+            <div>
+              <p className="text-justify text-[#d7d7d7] text-[20px] flex flex-col gap-2">
                 <span>
                   BrodyPaetau is a renowned artist duo known for their grotesque
                   and offensive humorous contemporary artworks that often push
@@ -137,25 +150,99 @@ const About = () => {
                   makes a statement.
                 </span>
               </p>
-
-              <div className="flex justify-center flex-col">
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-5">
+              <div className="flex justify-center items-center flex-col">
                 <img
-                  src={Story}
+                  src={Story2}
                   alt=""
-                  className="w-full h-full object-cover border-2 border-[#DEAF07]"
+                  className="w-full h-52 object-fill border-2 border-[#DEAF07]"
                 />
+                <a
+                  href="https://old.brodypaetau.com/recent-works/degenerate-art"
+                  className="text-white underline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://old.brodypaetau.com/recent-works/degenerate-art
+                </a>
               </div>
-              <img
-                src={Dog}
-                alt=""
-                className="w-full object-cover border-2 border-[#DEAF07]"
-              />
+              <div className="flex justify-center items-center flex-col">
+                <img
+                  src={Story1}
+                  alt=""
+                  className="w-full h-52 object-fill border-2 border-[#DEAF07]"
+                />
+                <a
+                  href="https://old.brodypaetau.com/wanted-works-2004-2006/artstar-2004"
+                  className="text-white underline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://old.brodypaetau.com/wanted-works-2004-2006/artstar-2004
+                </a>
+              </div>
+              <div className="flex justify-center items-center flex-col">
+                <img
+                  src={Art}
+                  alt=""
+                  className="w-full h-52 object-fill border-2 border-[#DEAF07]"
+                />
+                <a
+                  href="https://old.brodypaetau.com/wanted-works-2004-2006/art-forum-accident-2005"
+                  className="text-white underline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://old.brodypaetau.com/wanted-works-2004-2006/art-forum-accident-2005
+                </a>
+              </div>
+              <div className="flex justify-center items-center flex-col">
+                <img
+                  src={Dog2}
+                  alt=""
+                  className="w-full h-52 object-fill border-2 border-[#DEAF07]"
+                />
+                <a
+                  href="https://old.brodypaetau.com/recent-works/dog-carpets-2007-by-ondrej-brody-and-kristofer-paetau"
+                  className="text-white underline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://old.brodypaetau.com/recent-works/dog-carpets-2007-by-ondrej-brody-and-kristofer-paetau
+                </a>
+              </div>
 
-              <img
-                src={Art}
-                alt=""
-                className="w-full h-full object-cover border-2 border-[#DEAF07]"
-              />
+              <div className="flex justify-center items-center flex-col">
+                <img
+                  src={Dog3}
+                  alt=""
+                  className="w-full h-96 object-fill border-2 border-[#DEAF07]"
+                />
+                <a
+                  href="https://old.brodypaetau.com/recent-works/gartenzwerg"
+                  className="text-white underline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://old.brodypaetau.com/recent-works/gartenzwerg
+                </a>
+              </div>
+              <div className="flex justify-center items-center flex-col">
+                <img
+                  src={Dog1}
+                  alt=""
+                  className="w-full h-96 object-fill border-2 border-[#DEAF07]"
+                />
+                <a
+                  href="https://old.brodypaetau.com/recent-works/dog-carpets-2007-by-ondrej-brody-and-kristofer-paetau"
+                  className="text-white underline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://old.brodypaetau.com/recent-works/dog-carpets-2007-by-ondrej-brody-and-kristofer-paetau
+                </a>
+              </div>
             </div>
           </div>
           {/* VISION AND BENEFITS OF THE CAMELTOE BRIDES */}
@@ -164,7 +251,7 @@ const About = () => {
               VISION AND BENEFITS OF THE CAMELTOE BRIDES
             </h1>
             <div className="grid grid-cols-1 gap-5">
-              <p className="text-justify text-[#d7d7d7] flex flex-col gap-10">
+              <p className="text-justify text-[#d7d7d7] text-[20px] flex flex-col gap-10">
                 <span>
                   The vision behind the Cameltoe Brides, the first NFT
                   collection by BrodyPaetau, is to create an active community
@@ -194,33 +281,39 @@ const About = () => {
                   art world.
                 </span>
               </p>
-              <p className="text-justify text-[#d7d7d7] flex flex-col gap-10">
-                <span>
-                  BrodyPaetau are committed to providing real, measurable
-                  benefits to their community and collectors. That is why when
-                  you purchase a Cameltoe Bride NFT, you gain ownership of the
-                  commercial rights to the piece. We have also established the
-                  BrodyPaetau Collector Fund, dedicating 5% of all royalties
-                  from the secondary market of the Cameltoe Brides collection
-                  (and all future BrodyPaetau NFTs) to the fund. The Collector
-                  Fund pays out monthly royalties to the top 10 collectors,
-                  divided equally among the top 10 wallets that acquired
-                  BrodyPaetau NFTs during each month. The payout for the current
-                  month is made on the first day of the next month. Only buy
-                  transactions that paid the full royalties do qualify for the
-                  Collector Fund, and each NFT or NFT collection that
-                  BrodyPaetau create will always qualify for the fund. This
-                  means that buy transactions of older BrodyPaetau NFTs continue
-                  to qualify for the monthly Top 10 Collector Fund Royalties,
-                  encouraging our community and collectors to respect the
-                  royalties and to invest in old and new collections.
-                  Furthermore, we will also compensate holders in the community
-                  with regular free mints, the possibility to enter future
-                  pre-sales, and other benefits which will be announced over
-                  time. We are dedicated to hearing proposals from our community
-                  and working together to expand and prosper.
-                </span>
-              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <p className="text-justify text-[#d7d7d7] text-[20px] flex flex-col gap-10">
+                  <span>
+                    BrodyPaetau are committed to providing real, measurable
+                    benefits to their community and collectors. That is why when
+                    you purchase a Cameltoe Bride NFT, you gain ownership of the
+                    commercial rights to the piece. We have also established the
+                    BrodyPaetau Collector Fund, dedicating 5% of all royalties
+                    from the secondary market of the Cameltoe Brides collection
+                    (and all future BrodyPaetau NFTs) to the fund. The Collector
+                    Fund pays out monthly royalties to the top 10 collectors,
+                    divided equally among the top 10 wallets that acquired
+                    BrodyPaetau NFTs during each month. The payout for the
+                    current month is made on the first day of the next month.
+                    Only buy transactions that paid the full royalties do
+                    qualify for the Collector Fund, and each NFT or NFT
+                    collection that BrodyPaetau create will always qualify for
+                    the fund. This means that buy transactions of older
+                    BrodyPaetau NFTs continue to qualify for the monthly Top 10
+                    Collector Fund Royalties, encouraging our community and
+                    collectors to respect the royalties and to invest in old and
+                    new collections. Furthermore, we will also compensate
+                    holders in the community with regular free mints, the
+                    possibility to enter future pre-sales, and other benefits
+                    which will be announced over time. We are dedicated to
+                    hearing proposals from our community and working together to
+                    expand and prosper.
+                  </span>
+                </p>
+                <div className="text-justify text-[#d7d7d7] flex flex-col gap-10">
+                  <img src={Vison} alt="" className="h-full" />
+                </div>
+              </div>
             </div>
           </div>
           {/* TOTAL COLLECTIBLES */}
@@ -229,7 +322,7 @@ const About = () => {
               TOTAL COLLECTIBLES
             </h1>
             <div className="grid grid-cols-1  gap-10">
-              <p className="text-justify text-[#d7d7d7] flex flex-col gap-2">
+              <p className="text-justify text-[20px] text-[#d7d7d7] flex flex-col gap-2">
                 <span>
                   The BrodyPaetau Cameltoe Brides collection includes a total of
                   1500 unique NFTs, divided into two versions: V1 and V2. The V1
@@ -308,7 +401,7 @@ const About = () => {
               COPYRIGHTS OF THE CAMELTOE BRIDES
             </h1>
             <div className="grid grid-cols-1  gap-10">
-              <p className="text-justify text-[#d7d7d7] flex flex-col gap-2">
+              <p className="text-justify text-[20px] text-[#d7d7d7] flex flex-col gap-2">
                 <span>
                   Please note that the copyright of the underlying artwork
                   remains with the creators, BrodyPaetau. The ownership of the
@@ -335,7 +428,7 @@ const About = () => {
               BRIDES
             </h1>
             <div className="grid grid-cols-1  gap-10">
-              <p className="text-justify text-[#d7d7d7] flex flex-col gap-2">
+              <p className="text-justify text-[20px] text-[#d7d7d7] flex flex-col gap-2">
                 <span>
                   The team plans to hold regular online events such as artist
                   talks and AMA sessions to engage and interact with the

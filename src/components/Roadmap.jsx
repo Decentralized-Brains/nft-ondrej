@@ -1,5 +1,6 @@
 import React from "react";
 import RoadMap from "../assets/roadmap.png";
+import H3 from "../assets/about-us/135.jpeg";
 
 const Roadmap = () => {
   return (
@@ -12,8 +13,8 @@ const Roadmap = () => {
           <li className="mb-10 ml-4">
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
 
-            <h3 className="text-lg font-semibold text-[#DEAF07] ">Phase 1</h3>
-            <ul className="mb-4 text-base font-normal text-[#d7d7d7]  list-disc pl-4">
+            <h3 className="text-lg font-semibold text-[#DEAF07]  ">Phase 1</h3>
+            <ul className="mb-4 text-base font-normal text-[20px] text-[#d7d7d7]  list-disc pl-4">
               <li>Social channels live</li>
               <li>Establish an official website</li>
               <li>
@@ -32,7 +33,7 @@ const Roadmap = () => {
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
 
             <h3 className="text-lg font-semibold text-[#DEAF07] ">Phase 2</h3>
-            <ul className="mb-4 text-base font-normal text-[#d7d7d7] list-disc pl-4">
+            <ul className="mb-4 text-base font-normal text-[20px] text-[#d7d7d7] list-disc pl-4">
               <li>NFT development and Minting on the ETH network</li>
               <li>
                 Static Cameltoe Brides collection will be available on the
@@ -51,7 +52,7 @@ const Roadmap = () => {
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
 
             <h3 className="text-lg font-semibold text-[#DEAF07] ">Phase 3</h3>
-            <ul className="mb-4 text-base font-normal text-[#d7d7d7] list-disc pl-4">
+            <ul className="mb-4 text-base font-normal text-[20px] text-[#d7d7d7] list-disc pl-4">
               <li>
                 Launch of the Collector Fund with monthly Royalties for
                 collectors
@@ -71,7 +72,7 @@ const Roadmap = () => {
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
 
             <h3 className="text-lg font-semibold text-[#DEAF07] ">Phase 4</h3>
-            <ul className="mb-4 text-base font-normal text-[#d7d7d7]  list-disc pl-4">
+            <ul className="mb-4 text-base font-normal text-[20px] text-[#d7d7d7]  list-disc pl-4">
               <li>
                 Preparation of the next NFT Collection with incentives for
                 holders of the Static Cameltoe Brides NFTs.
@@ -86,6 +87,7 @@ const Roadmap = () => {
           <img src={RoadMap} alt="" />
         </div>
       </div>
+      <img src={H3} alt="" className="h-[18rem] rounded-full" />
     </div>
   );
 };
