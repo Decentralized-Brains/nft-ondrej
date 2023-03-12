@@ -4,14 +4,10 @@ import ProfilePic from "../assets/propic.jpg";
 const InfoTableTwo = () => {
   return (
     <div className="my-16">
-      <div className="flex justify-start items-center gap-2">
-        <button className="text-sm bg-[#FCC607] rounded ">TOP 11-20</button>
-        <div className="font-wanted text-xl md:text-4xl text-[#d7d7d7]">
+      <div className="flex flex-col md:flex-row justify-start md:items-center gap-2">
+        <button className="text-sm bg-[#FCC607] rounded w-36">TOP 11-20</button>
+        <div className="text-base md:text-xl md:font-bold text-[#d7d7d7]">
           Current Fund Amount: 1.036ETH{" "}
-          <span className="pl-4">
-            {" "}
-            Expected payout for each TOP 10 collector: 0.103456
-          </span>
         </div>
       </div>
       <div className=" overflow-x-auto sm:rounded-lg border border-[#FCC607] mt-10">

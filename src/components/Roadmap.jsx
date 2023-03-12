@@ -44,7 +44,11 @@ const Roadmap = () => {
             </ul>
           </div>
           <div>
-            <img src={H3} alt="" className="h-[18rem] rounded-full" />
+            <img
+              src={H3}
+              alt=""
+              className="h-[18rem] rounded-full border-2 border-[#DEAF07]"
+            />
           </div>
         </div>
         <div className="hidden md:flex items-center justify-center ">

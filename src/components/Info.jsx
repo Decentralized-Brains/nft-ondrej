@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import InfoTableOne from "./InfoTableOne";
 import InfoTableTwo from "./InfoTableTwo";
 import InfoTablePrevious from "./InfoTablePrevious";
@@ -13,16 +13,16 @@ const Info = () => {
 
   // get hours left in month
 
-  const date = new Date();
-  const daysLeft =
-    new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate() -
-    date.getDate();
+  // const date = new Date();
+  // const daysLeft =
+  //   new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate() -
+  //   date.getDate();
 
-  const hoursLeft = 24 - date.getHours();
-  const minutesLeft = 60 - date.getMinutes();
-  const secondsLeft = 60 - date.getSeconds();
+  // const hoursLeft = 24 - date.getHours();
+  // const minutesLeft = 60 - date.getMinutes();
+  // const secondsLeft = 60 - date.getSeconds();
 
-  console.log(daysLeft, " ", hoursLeft, "", minutesLeft, "", secondsLeft);
+  // console.log(daysLeft, " ", hoursLeft, "", minutesLeft, "", secondsLeft);
 
   // Creating a date object
   var today = new Date();
@@ -30,23 +30,50 @@ const Info = () => {
   // Getting full month name (e.g. "June")
   var month = today.toLocaleString("default", { month: "long" }).toUpperCase();
 
+  const [daysLeft, setDaysLeft] = useState(0);
+  const [hoursLeft, setHoursLeft] = useState(0);
+  const [minutesLeft, setMinutesLeft] = useState(0);
+  const [secondsLeft, setSecondsLeft] = useState(0);
+
+  function updateCountdown() {
+    const date = new Date();
+    const daysInMonth = new Date(
+      date.getFullYear(),
+      date.getMonth() + 1,
+      0
+    ).getDate();
+    const daysLeft = daysInMonth - date.getDate();
+    const hoursLeft = 24 - date.getHours();
+    const minutesLeft = 60 - date.getMinutes();
+    const secondsLeft = 60 - date.getSeconds();
+
+    setDaysLeft(daysLeft);
+    setHoursLeft(hoursLeft);
+    setMinutesLeft(minutesLeft);
+    setSecondsLeft(secondsLeft);
+  }
+
+  useEffect(() => {
+    const intervalId = setInterval(updateCountdown, 1000);
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <div className="container  my-16 md:my-[60px] ">
       <div>
         {/* Button */}
         <div>
-          <div className="flex justify-between items-end">
-            <div className="flex justify-center items-center gap-2  ">
-              <button className="text-sm  bg-[#FCC607] rounded ">Top 10</button>
-              <div className="font-wanted text-xl md:text-4xl text-[#d7d7d7]">
-                Current Fund Amount: 1.036ETH{" "}
-                <span className="pl-4">
-                  {" "}
-                  Expected payout for each TOP 10 collector: 0.103456
-                </span>
+          <div className="flex flex-col-reverse gap-5 md:flex-row justify-between ">
+            <div className="flex flex-col md:flex-row justify-center md:items-center gap-2  ">
+              <button className="w-36 text-sm  bg-[#FCC607] rounded">
+                Top 10
+              </button>
+              <div className="flex flex-col md:flex-row gap-2 text-base md:text-xl md:font-bold text-[#d7d7d7]">
+                <span>Current Fund Amount: 1.036ETH</span>
+                <span>Expected payout for each TOP 10 collector: 0.103456</span>
               </div>
             </div>
-            <div>
+            <div className="flex justify-end flex-col items-end md:items-start">
               <div className="text-[#D9D9D9] text-base pb-2 capitalize">
                 {month} MONTH ENDS IN
               </div>

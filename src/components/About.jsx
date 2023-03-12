@@ -22,16 +22,32 @@ const About = () => {
   return (
     <>
       <div className="flex items-center justify-center gap-10 flex-wrap py-5 md:pb-18 mt-5">
-        <img src={H1} alt="" className="h-36 md:h-52 rounded-full" />
-        <img src={H2} alt="" className="h-36 md:h-52 rounded-full" />
-        <img src={H3} alt="" className="h-36 md:h-52 rounded-full" />
+        <img
+          src={H1}
+          alt=""
+          className="h-36 md:h-52 rounded-full border-2 border-[#DEAF07]"
+        />
+        <img
+          src={H2}
+          alt=""
+          className="h-36 md:h-52 rounded-full border-2 border-[#DEAF07]"
+        />
+        <img
+          src={H3}
+          alt=""
+          className="h-36 md:h-52 rounded-full border-2 border-[#DEAF07]"
+        />
       </div>
-      <div className="container flex  md:flex-row flex-col items-center">
+      <div className="container flex  md:flex-row flex-col justify-center items-center">
         <div className="lg:flex-grow md:w-5/6  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="text-4xl sm:text-6xl md:text-[100px] my-10 text-[#DEAF07] sm:leading-[80px] font-wanted mx-auto ">
             CAMELTOE BRIDES
           </h1>
-          <img src={Main} alt="" className="h-full w-full mx-auto " />
+          <img
+            src={Main}
+            alt=""
+            className="h-full w-full mx-auto border-2 border-[#DEAF07]"
+          />
           {/* ABOUT THE CAMEL TO EBRIDES */}
           <div className="flex justify-center items-center flex-col my-10 px-2 md:px-0">
             <h1 className="text-4xl sm:text-6xl md:text-[100px] mb-6 text-[#DEAF07] sm:leading-[80px] font-wanted mx-auto py-10">
@@ -160,7 +176,7 @@ const About = () => {
                 />
                 <a
                   href="https://old.brodypaetau.com/recent-works/degenerate-art"
-                  className="text-white underline"
+                  className="text-white underline max-w-lg h-16 md:h-10"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -175,7 +191,7 @@ const About = () => {
                 />
                 <a
                   href="https://old.brodypaetau.com/wanted-works-2004-2006/artstar-2004"
-                  className="text-white underline"
+                  className="text-white underline max-w-lg h-16 md:h-10"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -190,7 +206,7 @@ const About = () => {
                 />
                 <a
                   href="https://old.brodypaetau.com/wanted-works-2004-2006/art-forum-accident-2005"
-                  className="text-white underline"
+                  className="text-white underline max-w-lg h-16 md:h-10"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -205,7 +221,7 @@ const About = () => {
                 />
                 <a
                   href="https://old.brodypaetau.com/recent-works/dog-carpets-2007-by-ondrej-brody-and-kristofer-paetau"
-                  className="text-white underline"
+                  className="text-white underline max-w-lg h-16 md:h-10"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -221,7 +237,7 @@ const About = () => {
                 />
                 <a
                   href="https://old.brodypaetau.com/recent-works/gartenzwerg"
-                  className="text-white underline"
+                  className="text-white underline max-w-lg h-16 md:h-10"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -236,7 +252,7 @@ const About = () => {
                 />
                 <a
                   href="https://old.brodypaetau.com/recent-works/dog-carpets-2007-by-ondrej-brody-and-kristofer-paetau"
-                  className="text-white underline"
+                  className="text-white underline max-w-lg h-16 md:h-10"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -311,7 +327,11 @@ const About = () => {
                   </span>
                 </p>
                 <div className="text-justify text-[#d7d7d7] flex flex-col gap-10">
-                  <img src={Vison} alt="" className="h-full" />
+                  <img
+                    src={Vison}
+                    alt=""
+                    className="h-full border-2 border-[#DEAF07]"
+                  />
                 </div>
               </div>
             </div>

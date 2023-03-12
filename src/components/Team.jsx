@@ -22,7 +22,7 @@ const Team = () => {
                 <img
                   src={item.img}
                   alt=""
-                  className="h-[250px] w-[300px] mx-auto object-fill "
+                  className="h-[250px] w-[300px] mx-auto object-fill border-2 border-[#DEAF07]"
                 />
               </div>
               <div>
